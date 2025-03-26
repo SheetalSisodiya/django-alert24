@@ -1,5 +1,5 @@
 django
 pillow
 whitenoise
-tinymce
+tinymce4
 gunicorn
