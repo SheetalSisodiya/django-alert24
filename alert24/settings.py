@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'tinymce4',
+    'tinymce',
     'whitenoise',
 ]
 
