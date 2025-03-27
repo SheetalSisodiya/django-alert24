@@ -15,9 +15,9 @@
       <div class="col-md-9 border-end border-3" >
         {% for news in allNews %}
 
-        
-          <div class="">
-            <img src="/media/{{ news.image }}" class="img-fluid" style="width: 40vw; height: 50vh;" alt="">
+        <div class="row my-5">
+          <div class=col-md-4">
+            <img src="/media/{{ news.image }}" class="img-fluid" style="width: 90vw; height: 30vh" alt=""/>
           </div>
           <div class="col-md-7 px-3">
             <small>
@@ -43,10 +43,10 @@
         <a href=""class="link-danger" >
           <div class="row">
           <div class="col-md-4">
-            <img class="img-fiuld" src="/media/{{ news.image }}" style="width: 15vw; height: 15vh;" alt="">
+            <img class="img-fiuld" src="/media/{{ news.image }}" alt=""/>
           </div>
           <div class="col-md-8">
-            <p>{{ news.title | truncatewords:10 }}</p>
+            <p>{{ news.title | truncatewords: 8 }}</p>
           </div>
         </div>
       </a>
