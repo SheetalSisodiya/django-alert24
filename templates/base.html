@@ -50,7 +50,7 @@
 
           <marquee  onmouseover="stop()" onmouseleave="start()" class="bg-danger p-3 fs-5 text-light pt-2" > Breaking News:
             {% for top in topNews %}
-            <a href="" class="link-light  me-5">{{ top.title | truncatewords:8 }} </a>
+            <a href="" class="link-light  me-5">{{ top.title | truncatewords:10 }} </a>
             {% endfor %}
           </marquee>
 
