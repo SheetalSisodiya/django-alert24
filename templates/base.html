@@ -48,20 +48,20 @@
             </div>
           </nav>
 
-          <marquee  onmouseover="stop()" onmouseleave="start()" class="bg-danger p-3 text-light pt-2" > Breaking News:
+          <marquee  onmouseover="stop()" onmouseleave="start()" class="bg-danger p-3 fs-5 text-light pt-2" > Breaking News:
             {% for top in topNews %}
-            <a href="" class="link-light fs-5 me-5">{{ top.title | truncatewords:8 }} </a>
+            <a href="" class="link-light  me-5">{{ top.title | truncatewords:8 }} </a>
             {% endfor %}
           </marquee>
 
 
 
           <!--Categories-->
-          <div class="row" style="margin: 40px" >
+          <div class="row" style="margin: 40px">
             
 
             {% for category in categories %}
-            <div class="col">
+            <div class="col my-2">
               <div class="card" style="width: 18rem;">
                   <img src="/media/{{ category.image }}" class="card-img-top" style="width: 17.9rem; height: 170px;" alt="...">
                   <div class="card-body">
